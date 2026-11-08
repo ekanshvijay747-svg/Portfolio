@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Dots (Apple Keynote Style) -->
+  <nav class="slide-nav" aria-label="Slide navigation">
+    <button class="nav-dot active" data-slide="0" aria-label="Go to Section 1"></button>
+    <button class="nav-dot" data-slide="1" aria-label="Go to Section 2"></button>
+    <button class="nav-dot" data-slide="2" aria-label="Go to Section 3"></button>
+    <button class="nav-dot" data-slide="3" aria-label="Go to Section 4"></button>
+    <button class="nav-dot" data-slide="4" aria-label="Go to Section 5"></button>
+  </nav>
+
+  <!-- Main Scroll Snapping Presentation Container -->
+  <main class="presentation-container">
+
+    <!-- Section 1: Text Left, Image Right -->
+    <section class="section section-text-left" id="section-1" data-index="0">
+      <div class="section-grid">
+        <div class="text-column">
+          <h1 class="headline">Wingmate: Air Cadet Hub</h1>
+          <p class="body-copy">Wingmate is a mobile application I developed to centralize uniform regulations and aviation theory for the Air Cadet program. I spent the summer building this prototype to address the gap between scattered government manuals and practical application. The app provides offline video guides and a structured layout so cadets can easily locate uniform standards like badge placement and boot polishing. Changing the way cadets consume this knowledge helps the squadron improve standards through accessible design rather than forced memorization.</p>
+        </div>
+        <div class="image-column">
+          <div class="media-frame">
+            <img src="image_97c624.png" alt="Wingmate: Air Cadet Hub" loading="eager">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Image Left, Text Right -->
+    <section class="section section-image-left" id="section-2" data-index="1">
+      <div class="section-grid">
+        <div class="text-column">
+          <h1 class="headline">DeltaLog: Error Ledger</h1>
+          <p class="body-copy">I built this custom error ledger to track and categorize my mistakes for the AMC 10 and competitive mathematics. Instead of simply studying harder, I used this system to log specific divergence points and cognitive blindspots. By tracking these trends over time, I discovered that my biggest contributors to lost points were perceptual misreads and calculation slips caused by rushing. Logging these specific errors allowed me to strategically adjust my test-taking process.</p>
+        </div>
+        <div class="image-column">
+          <div class="media-frame">
+            <img src="Screenshot 2026-11-08 at 1.07.56 PM.jpg" alt="DeltaLog: Error Ledger" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Text Left, Image Right -->
+    <section class="section section-text-left" id="section-3" data-index="2">
+      <div class="section-grid">
+        <div class="text-column">
+          <h1 class="headline">Process Optimization</h1>
+          <p class="body-copy">This is the AMC 10 Pre-Flight Checklist I designed to optimize my exam execution. I realized that my mock test scores stalled not because of a lack of math skills, but due to an unstructured approach to solving problems. I implemented a strict routine, including reading questions twice, constraint logging, and variable normalization. These process-driven changes, combined with 5:00 AM study blocks, significantly improved my performance by eliminating unforced errors.</p>
+        </div>
+        <div class="image-column">
+          <div class="media-frame">
+            <img src="Screenshot 2026-11-08 at 12.04.19 PM.png" alt="Process Optimization" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Image Left, Text Right -->
+    <section class="section section-image-left" id="section-4" data-index="3">
+      <div class="section-grid">
+        <div class="text-column">
+          <h1 class="headline">VEX V5 Drivetrain CAD</h1>
+          <p class="body-copy">I taught myself CAD to prototype our VEX V5 robot before committing to a physical build, as metal parts are costly to fix once cut. I modeled the drivetrain over the summer to determine exact gear ratios and motor layouts ahead of time. Documenting the physical topology and sizing constraints gave our team a significant head-start, allowing us to have a fully functional drivetrain running within a week of the robotics lab opening.</p>
+        </div>
+        <div class="image-column">
+          <div class="media-frame">
+            <img src="Screenshot 2026-11-08 at 1.26.30 PM.jpg" alt="VEX V5 Drivetrain CAD" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Text Left, Image Right -->
+    <section class="section section-text-left" id="section-5" data-index="4">
+      <div class="section-grid">
+        <div class="text-column">
+          <h1 class="headline">VEX Engineering Notebook</h1>
+          <p class="body-copy">This section of our Engineering Notebook documents our weekly deliverables and subsystem power budgets. To fix our team's unstructured approach to the build season, I implemented a system where we committed to bite-sized goals every Monday and reviewed them on Friday. Documenting our empirical subsystem verification and tracking these milestones allowed us to make steady progress, easing the pressure before competitions and directly contributing to our Judges Award.</p>
+        </div>
+        <div class="image-column">
+          <div class="media-frame">
+            <img src="Screenshot 2026-11-08 at 1.26.15 PM.jpg" alt="VEX Engineering Notebook" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
