@@ -11,7 +11,42 @@
 </head>
 <body>
 
-  <!-- Navigation Dots (Apple Keynote Style) -->
+  <!-- Global Floating Navigation & Project Links Hub (Top Right) -->
+  <header class="global-nav">
+    <div class="projects-dropdown" id="projectsDropdown">
+      <button class="dropdown-trigger" id="dropdownTrigger" aria-expanded="false" aria-haspopup="true">
+        <span>Live Projects</span>
+        <svg class="chevron-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m6 9 6 6 6-6"/>
+        </svg>
+      </button>
+      <div class="dropdown-menu" id="dropdownMenu" role="menu">
+        <a href="https://ekanshvijay747-svg.github.io/Wingmate/" target="_blank" rel="noopener noreferrer" class="dropdown-item" role="menuitem">
+          <div class="item-info">
+            <span class="item-title">Wingmate</span>
+            <span class="item-desc">Air Cadet Hub</span>
+          </div>
+          <span class="item-arrow">↗</span>
+        </a>
+        <a href="https://ekanshvijay747-svg.github.io/blueprint-portfolio/" target="_blank" rel="noopener noreferrer" class="dropdown-item" role="menuitem">
+          <div class="item-info">
+            <span class="item-title">3D Blueprint</span>
+            <span class="item-desc">Interactive Portfolio</span>
+          </div>
+          <span class="item-arrow">↗</span>
+        </a>
+        <a href="https://ekanshvijay747-svg.github.io/Mistake-log/" target="_blank" rel="noopener noreferrer" class="dropdown-item" role="menuitem">
+          <div class="item-info">
+            <span class="item-title">DeltaLog</span>
+            <span class="item-desc">Mistake Ledger</span>
+          </div>
+          <span class="item-arrow">↗</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Minimalist Slide Navigation (Apple Keynote Style) -->
   <nav class="slide-nav" aria-label="Slide navigation">
     <button class="nav-dot active" data-slide="0" aria-label="Go to Section 1"></button>
     <button class="nav-dot" data-slide="1" aria-label="Go to Section 2"></button>
@@ -23,37 +58,47 @@
   <!-- Main Scroll Snapping Presentation Container -->
   <main class="presentation-container">
 
-    <!-- Section 1: Text Left, Image Right -->
+    <!-- Page 1 / Box 1: Wingmate (Text Left, Image Right) -->
     <section class="section section-text-left" id="section-1" data-index="0">
       <div class="section-grid">
         <div class="text-column">
           <h1 class="headline">Wingmate: Air Cadet Hub</h1>
           <p class="body-copy">Wingmate is a mobile application I developed to centralize uniform regulations and aviation theory for the Air Cadet program. I spent the summer building this prototype to address the gap between scattered government manuals and practical application. The app provides offline video guides and a structured layout so cadets can easily locate uniform standards like badge placement and boot polishing. Changing the way cadets consume this knowledge helps the squadron improve standards through accessible design rather than forced memorization.</p>
+          <div class="project-link-wrapper">
+            <a href="https://ekanshvijay747-svg.github.io/Wingmate/" target="_blank" rel="noopener noreferrer" class="project-link">
+              Live Deployment ↗
+            </a>
+          </div>
         </div>
         <div class="image-column">
           <div class="media-frame">
-            <img src="image_97c624.png" alt="Wingmate: Air Cadet Hub" loading="eager">
+            <img src="images/wingmate.png" alt="Wingmate: Air Cadet Hub" loading="eager">
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Section 2: Image Left, Text Right -->
+    <!-- Page 2 / Box 2: DeltaLog (Image Left, Text Right) -->
     <section class="section section-image-left" id="section-2" data-index="1">
       <div class="section-grid">
         <div class="text-column">
-          <h1 class="headline">DeltaLog: Error Ledger</h1>
-          <p class="body-copy">I built this custom error ledger to track and categorize my mistakes for the AMC 10 and competitive mathematics. Instead of simply studying harder, I used this system to log specific divergence points and cognitive blindspots. By tracking these trends over time, I discovered that my biggest contributors to lost points were perceptual misreads and calculation slips caused by rushing. Logging these specific errors allowed me to strategically adjust my test-taking process.</p>
+          <h1 class="headline">DeltaLog</h1>
+          <p class="body-copy">I built DeltaLog to track and categorize my mistakes for the AMC 10 and competitive mathematics. Instead of simply studying harder, I used this system to log specific divergence points and cognitive blindspots. By tracking these trends over time, I discovered that my biggest contributors to lost points were perceptual misreads and calculation slips caused by rushing. Logging these specific errors allowed me to strategically adjust my test-taking process.</p>
+          <div class="project-link-wrapper">
+            <a href="https://ekanshvijay747-svg.github.io/Mistake-log/" target="_blank" rel="noopener noreferrer" class="project-link">
+              View Repository ↗
+            </a>
+          </div>
         </div>
         <div class="image-column">
           <div class="media-frame">
-            <img src="Screenshot 2026-11-08 at 1.07.56 PM.jpg" alt="DeltaLog: Error Ledger" loading="lazy">
+            <img src="images/deltalog.png" alt="DeltaLog" loading="eager">
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Section 3: Text Left, Image Right -->
+    <!-- Page 3 / Box 3: Process Optimization (Text Left, Image Right) -->
     <section class="section section-text-left" id="section-3" data-index="2">
       <div class="section-grid">
         <div class="text-column">
@@ -62,37 +107,45 @@
         </div>
         <div class="image-column">
           <div class="media-frame">
-            <img src="Screenshot 2026-11-08 at 12.04.19 PM.png" alt="Process Optimization" loading="lazy">
+            <img src="images/process_optimization.png" alt="Process Optimization" loading="eager">
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Section 4: Image Left, Text Right -->
+    <!-- Page 4 / Box 4: VEX V5 Drivetrain CAD (Image Left, Text Right) -->
     <section class="section section-image-left" id="section-4" data-index="3">
       <div class="section-grid">
         <div class="text-column">
           <h1 class="headline">VEX V5 Drivetrain CAD</h1>
           <p class="body-copy">I taught myself CAD to prototype our VEX V5 robot before committing to a physical build, as metal parts are costly to fix once cut. I modeled the drivetrain over the summer to determine exact gear ratios and motor layouts ahead of time. Documenting the physical topology and sizing constraints gave our team a significant head-start, allowing us to have a fully functional drivetrain running within a week of the robotics lab opening.</p>
+          <div class="project-link-wrapper">
+            <a href="https://cad.onshape.com/documents/c4b3265a548a030d938995ea/w/352663e6b6c9ae3446b81cca/e/decb3470c9fe17a22a3c8e25" target="_blank" rel="noopener noreferrer" class="project-link">
+              View 3D Onshape Model ↗
+            </a>
+          </div>
         </div>
         <div class="image-column">
           <div class="media-frame">
-            <img src="Screenshot 2026-11-08 at 1.26.30 PM.jpg" alt="VEX V5 Drivetrain CAD" loading="lazy">
+            <img src="images/drivetrain_cad.png" alt="VEX V5 Drivetrain CAD" loading="eager">
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Section 5: Text Left, Image Right -->
+    <!-- Page 5 / Box 5: VEX Engineering Notebook (Text Left, Image Right) -->
     <section class="section section-text-left" id="section-5" data-index="4">
       <div class="section-grid">
         <div class="text-column">
           <h1 class="headline">VEX Engineering Notebook</h1>
           <p class="body-copy">This section of our Engineering Notebook documents our weekly deliverables and subsystem power budgets. To fix our team's unstructured approach to the build season, I implemented a system where we committed to bite-sized goals every Monday and reviewed them on Friday. Documenting our empirical subsystem verification and tracking these milestones allowed us to make steady progress, easing the pressure before competitions and directly contributing to our Judges Award.</p>
+          <p class="awards-callout">
+            <strong>Recognitions:</strong> Multiple-time VEX IQ and V5 award winner, including the Design, Innovate, Robot Skills, and Judges Awards.
+          </p>
         </div>
         <div class="image-column">
           <div class="media-frame">
-            <img src="Screenshot 2026-11-08 at 1.26.15 PM.jpg" alt="VEX Engineering Notebook" loading="lazy">
+            <img src="images/vex_notebook.png" alt="VEX Engineering Notebook" loading="eager">
           </div>
         </div>
       </div>

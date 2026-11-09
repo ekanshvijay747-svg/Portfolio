@@ -1,0 +1,22 @@
+{
+  "live_deployments": [
+    {
+      "id": "wingmate",
+      "title": "Wingmate: Air Cadet Hub",
+      "url": "https://ekanshvijay747-svg.github.io/Wingmate/",
+      "description": "Centralized uniform regulations and aviation theory for the Air Cadet program."
+    },
+    {
+      "id": "blueprint-portfolio",
+      "title": "3D Blueprint Interactive",
+      "url": "https://ekanshvijay747-svg.github.io/blueprint-portfolio/",
+      "description": "Interactive 3D blueprint portfolio experience."
+    },
+    {
+      "id": "deltalog",
+      "title": "DeltaLog",
+      "url": "https://ekanshvijay747-svg.github.io/Mistake-log/",
+      "description": "AMC 10 and competitive mathematics error ledger and analytics system."
+    }
+  ]
+}
