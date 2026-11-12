@@ -468,7 +468,7 @@ body {
 }
 
 /* ==========================================================================
-   Live Project Cards & Robotics Story Columns
+   Live Project Cards
    ========================================================================== */
 
 .projects-grid {
@@ -486,37 +486,36 @@ body {
   color: #A1A1A6;
 }
 
-.story-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: clamp(1rem, 2vw, 2rem);
-}
-
-.story-card {
-  padding: clamp(1.25rem, 2vw, 1.75rem);
-  background: var(--card-bg);
-  border: 1px solid var(--border-subtle);
-  border-radius: 18px;
-}
-
-.story-heading {
-  margin: 0 0 0.75rem 0;
-  font-size: clamp(1.1rem, 1.4vw, 1.4rem);
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  color: var(--text-headline);
-}
-
-.story-copy {
-  margin: 0;
-  font-size: clamp(0.98rem, 1.1vw, 1.12rem);
-  line-height: 1.62;
-  color: var(--text-body);
-}
 
 /* Live Deployment button under each app card */
 .card-link {
   margin-top: 0.9rem;
+}
+
+/* ==========================================================================
+   VEX Robotics Chapter Opener: award & certificate images
+   ========================================================================== */
+
+.section-chapter.section-chapter-awards .chapter-inner {
+  max-width: 1480px;
+}
+
+.award-collage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(0.75rem, 1.4vw, 1.25rem);
+  margin-top: clamp(1.5rem, 3.5vh, 2.5rem);
+}
+
+.award-collage img {
+  height: min(20vh, 190px);
+  width: auto;
+  max-width: 100%;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 18px 40px -12px rgba(0, 0, 0, 0.9), 0 0 0 1px rgba(255, 255, 255, 0.08);
 }
 
 /* ==========================================================================
@@ -702,7 +701,7 @@ body {
 .project-link-wrapper,
 .awards-callout,
 .awards-grid,
-.story-grid,
+.award-collage,
 .media-frame {
   opacity: 0;
   transform: translateY(30px);
@@ -738,7 +737,7 @@ body {
 
 .section.is-visible .media-frame,
 .section.is-visible .awards-grid,
-.section.is-visible .story-grid {
+.section.is-visible .award-collage {
   opacity: 1;
   transform: translateY(0);
   transition-delay: 0.12s;
@@ -862,13 +861,27 @@ body {
     font-size: clamp(2.6rem, 11vw, 3.6rem);
   }
 
-  .projects-grid,
-  .story-grid {
+  .projects-grid {
     grid-template-columns: 1fr;
   }
 
   .projects-grid .award-thumb {
     height: 24vh;
+  }
+
+  /* VEX opener grows past one screen so award images stay legible */
+  .section-chapter-awards {
+    height: auto;
+    min-height: 100dvh;
+    padding: 4.5rem 1.5rem 5.5rem;
+    overflow: visible;
+    scroll-snap-stop: normal;
+  }
+
+  .award-collage img {
+    height: auto;
+    width: calc(50% - 0.5rem);
+    object-fit: contain;
   }
 
   .awards-grid {
@@ -901,7 +914,7 @@ body {
   .project-link-wrapper,
   .awards-callout,
   .awards-grid,
-  .story-grid,
+  .award-collage,
   .media-frame {
     opacity: 1 !important;
     transform: none !important;
