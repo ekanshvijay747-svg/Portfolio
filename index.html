@@ -48,20 +48,40 @@
 
   <!-- Minimalist Slide Navigation (Apple Keynote Style) -->
   <nav class="slide-nav" aria-label="Slide navigation">
-    <button class="nav-dot active" data-slide="0" aria-label="Go to Section 1"></button>
-    <button class="nav-dot" data-slide="1" aria-label="Go to Section 2"></button>
-    <button class="nav-dot" data-slide="2" aria-label="Go to Section 3"></button>
-    <button class="nav-dot" data-slide="3" aria-label="Go to Section 4"></button>
-    <button class="nav-dot" data-slide="4" aria-label="Go to Section 5"></button>
+    <button class="nav-dot nav-dot-chapter active" data-slide="0" aria-label="Go to chapter: Live Projects"></button>
+    <button class="nav-dot" data-slide="1" aria-label="Go to Wingmate: Air Cadet Hub"></button>
+    <button class="nav-dot" data-slide="2" aria-label="Go to DeltaLog"></button>
+    <button class="nav-dot" data-slide="3" aria-label="Go to Process Optimization"></button>
+    <button class="nav-dot nav-dot-chapter" data-slide="4" aria-label="Go to chapter: VEX Robotics"></button>
+    <button class="nav-dot" data-slide="5" aria-label="Go to VEX V5 Drivetrain CAD"></button>
+    <button class="nav-dot" data-slide="6" aria-label="Go to VEX Engineering Notebook"></button>
+    <button class="nav-dot" data-slide="7" aria-label="Go to VEX Robotics (VEX IQ &amp; VRC)"></button>
+    <button class="nav-dot nav-dot-chapter" data-slide="8" aria-label="Go to chapter: Cadet &amp; Academics"></button>
+    <button class="nav-dot" data-slide="9" aria-label="Go to Cadet &amp; Academic Recognition"></button>
   </nav>
 
   <!-- Main Scroll Snapping Presentation Container -->
   <main class="presentation-container">
 
+    <!-- Chapter 01: Live Projects -->
+    <section class="section section-chapter" id="chapter-projects" data-index="0">
+      <div class="chapter-inner">
+        <p class="chapter-number">01</p>
+        <h1 class="headline chapter-title">Live Projects</h1>
+        <p class="body-copy chapter-desc">Apps and systems I designed for Air Cadets and competitive math.</p>
+        <div class="project-link-wrapper chapter-links">
+          <a href="https://ekanshvijay747-svg.github.io/Wingmate/" target="_blank" rel="noopener noreferrer" class="project-link">Wingmate ↗</a>
+          <a href="https://ekanshvijay747-svg.github.io/blueprint-portfolio/" target="_blank" rel="noopener noreferrer" class="project-link">3D Blueprint ↗</a>
+          <a href="https://ekanshvijay747-svg.github.io/Mistake-log/" target="_blank" rel="noopener noreferrer" class="project-link">DeltaLog ↗</a>
+        </div>
+      </div>
+    </section>
+
     <!-- Page 1 / Box 1: Wingmate (Text Left, Image Right) -->
-    <section class="section section-text-left" id="section-1" data-index="0">
+    <section class="section section-text-left" id="section-1" data-index="1">
       <div class="section-grid">
         <div class="text-column">
+          <p class="eyebrow">Live Projects</p>
           <h1 class="headline">Wingmate: Air Cadet Hub</h1>
           <p class="body-copy">Wingmate is a mobile application I developed to centralize uniform regulations and aviation theory for the Air Cadet program. I spent the summer building this prototype to address the gap between scattered government manuals and practical application. The app provides offline video guides and a structured layout so cadets can easily locate uniform standards like badge placement and boot polishing. Changing the way cadets consume this knowledge helps the squadron improve standards through accessible design rather than forced memorization.</p>
           <div class="project-link-wrapper">
@@ -72,16 +92,17 @@
         </div>
         <div class="image-column">
           <div class="media-frame">
-            <img src="images/wingmate.png" alt="Wingmate: Air Cadet Hub" loading="eager">
+            <img src="images/wingmate-home-dashboard.png" alt="Wingmate: Air Cadet Hub" loading="eager">
           </div>
         </div>
       </div>
     </section>
 
     <!-- Page 2 / Box 2: DeltaLog (Image Left, Text Right) -->
-    <section class="section section-image-left" id="section-2" data-index="1">
+    <section class="section section-image-left" id="section-2" data-index="2">
       <div class="section-grid">
         <div class="text-column">
+          <p class="eyebrow">Live Projects</p>
           <h1 class="headline">DeltaLog</h1>
           <p class="body-copy">I built DeltaLog to track and categorize my mistakes for the AMC 10 and competitive mathematics. Instead of simply studying harder, I used this system to log specific divergence points and cognitive blindspots. By tracking these trends over time, I discovered that my biggest contributors to lost points were perceptual misreads and calculation slips caused by rushing. Logging these specific errors allowed me to strategically adjust my test-taking process.</p>
           <div class="project-link-wrapper">
@@ -92,31 +113,42 @@
         </div>
         <div class="image-column">
           <div class="media-frame">
-            <img src="images/deltalog.png" alt="DeltaLog" loading="eager">
+            <img src="images/deltalog-analytics-dashboard.png" alt="DeltaLog" loading="eager">
           </div>
         </div>
       </div>
     </section>
 
     <!-- Page 3 / Box 3: Process Optimization (Text Left, Image Right) -->
-    <section class="section section-text-left" id="section-3" data-index="2">
+    <section class="section section-text-left" id="section-3" data-index="3">
       <div class="section-grid">
         <div class="text-column">
+          <p class="eyebrow">Live Projects</p>
           <h1 class="headline">Process Optimization</h1>
           <p class="body-copy">This is the AMC 10 Pre-Flight Checklist I designed to optimize my exam execution. I realized that my mock test scores stalled not because of a lack of math skills, but due to an unstructured approach to solving problems. I implemented a strict routine, including reading questions twice, constraint logging, and variable normalization. These process-driven changes, combined with 5:00 AM study blocks, significantly improved my performance by eliminating unforced errors.</p>
         </div>
         <div class="image-column">
           <div class="media-frame">
-            <img src="images/process_optimization.png" alt="Process Optimization" loading="eager">
+            <img src="images/deltalog-problem-classification.png" alt="Process Optimization" loading="eager">
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Chapter 02: VEX Robotics -->
+    <section class="section section-chapter" id="chapter-vex" data-index="4">
+      <div class="chapter-inner">
+        <p class="chapter-number">02</p>
+        <h1 class="headline chapter-title">VEX Robotics</h1>
+        <p class="body-copy chapter-desc">CAD, engineering documentation, and competition awards from VEX IQ and VRC.</p>
+      </div>
+    </section>
+
     <!-- Page 4 / Box 4: VEX V5 Drivetrain CAD (Image Left, Text Right) -->
-    <section class="section section-image-left" id="section-4" data-index="3">
+    <section class="section section-image-left" id="section-4" data-index="5">
       <div class="section-grid">
         <div class="text-column">
+          <p class="eyebrow">VEX Robotics</p>
           <h1 class="headline">VEX V5 Drivetrain CAD</h1>
           <p class="body-copy">I taught myself CAD to prototype our VEX V5 robot before committing to a physical build, as metal parts are costly to fix once cut. I modeled the drivetrain over the summer to determine exact gear ratios and motor layouts ahead of time. Documenting the physical topology and sizing constraints gave our team a significant head-start, allowing us to have a fully functional drivetrain running within a week of the robotics lab opening.</p>
           <div class="project-link-wrapper">
@@ -127,16 +159,17 @@
         </div>
         <div class="image-column">
           <div class="media-frame">
-            <img src="images/drivetrain_cad.png" alt="VEX V5 Drivetrain CAD" loading="eager">
+            <img src="images/vex-v5-drivetrain-cad.png" alt="VEX V5 Drivetrain CAD" loading="eager">
           </div>
         </div>
       </div>
     </section>
 
     <!-- Page 5 / Box 5: VEX Engineering Notebook (Text Left, Image Right) -->
-    <section class="section section-text-left" id="section-5" data-index="4">
+    <section class="section section-text-left" id="section-5" data-index="6">
       <div class="section-grid">
         <div class="text-column">
+          <p class="eyebrow">VEX Robotics</p>
           <h1 class="headline">VEX Engineering Notebook</h1>
           <p class="body-copy">This section of our Engineering Notebook documents our weekly deliverables and subsystem power budgets. To fix our team's unstructured approach to the build season, I implemented a system where we committed to bite-sized goals every Monday and reviewed them on Friday. Documenting our empirical subsystem verification and tracking these milestones allowed us to make steady progress, easing the pressure before competitions and directly contributing to our Judges Award.</p>
           <p class="awards-callout">
@@ -145,9 +178,117 @@
         </div>
         <div class="image-column">
           <div class="media-frame">
-            <img src="images/vex_notebook.png" alt="VEX Engineering Notebook" loading="eager">
+            <img src="images/vex-v5-engineering-notebook.png" alt="VEX Engineering Notebook" loading="eager">
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Page 6 / Box 6: VEX Robotics Awards (Full-width gallery) -->
+    <section class="section section-stacked" id="section-6" data-index="7">
+      <div class="stacked-grid">
+        <div class="text-column">
+          <p class="eyebrow">VEX Robotics</p>
+          <h1 class="headline">VEX Robotics (VEX IQ &amp; VRC)</h1>
+          <p class="body-copy">Recognition from VEX robotics competitions in British Columbia, from December 2023 to January 2026, spanning design, innovation, robot skills, and judged awards.</p>
+        </div>
+        <ul class="awards-grid" role="list">
+          <li class="award-card">
+            <a class="award-thumb" href="images/cert-vexiq-judges-award-bc-provincials-2025.jpg" target="_blank" rel="noopener">
+              <img src="images/cert-vexiq-judges-award-bc-provincials-2025.jpg" alt="VEX IQ Judges Award certificate, Team 1021S Ten Ton Robotics, BC Provincials (MS), February 23, 2025" loading="lazy">
+            </a>
+            <p class="award-title">Judges Award</p>
+            <p class="award-meta">VEX IQ BC Provincials (MS) · Feb 23, 2025</p>
+          </li>
+          <li class="award-card">
+            <a class="award-thumb" href="images/cert-vexiq-judges-award-bc-provincials-2024.jpg" target="_blank" rel="noopener">
+              <img src="images/cert-vexiq-judges-award-bc-provincials-2024.jpg" alt="VEX IQ Judges Award certificate, Team 1012A XT Aluminium, BC Provincials (MS), February 25, 2024" loading="lazy">
+            </a>
+            <p class="award-title">Judges Award</p>
+            <p class="award-meta">VEX IQ BC Provincials (MS) · Feb 25, 2024</p>
+          </li>
+          <li class="award-card">
+            <a class="award-thumb" href="images/cert-vexiq-robot-skills-champion-2024.jpg" target="_blank" rel="noopener">
+              <img src="images/cert-vexiq-robot-skills-champion-2024.jpg" alt="VEX IQ Robot Skills Champion certificate, Team 1012A XT Aluminium, Ten Ton New Year Invitational (MS), January 13, 2024" loading="lazy">
+            </a>
+            <p class="award-title">Robot Skills Champion</p>
+            <p class="award-meta">Ten Ton New Year Invitational (MS) · Jan 13, 2024</p>
+          </li>
+          <li class="award-card">
+            <a class="award-thumb" href="images/cert-vexiq-design-award-2024.jpg" target="_blank" rel="noopener">
+              <img src="images/cert-vexiq-design-award-2024.jpg" alt="VEX IQ Design Award certificate, Team 1012A XT Aluminium, Ten Ton New Year Invitational (MS), January 13, 2024" loading="lazy">
+            </a>
+            <p class="award-title">Design Award</p>
+            <p class="award-meta">Ten Ton New Year Invitational (MS) · Jan 13, 2024</p>
+          </li>
+          <li class="award-card">
+            <a class="award-thumb" href="images/cert-vexiq-create-award-2023.jpg" target="_blank" rel="noopener">
+              <img src="images/cert-vexiq-create-award-2023.jpg" alt="VEX IQ Create Award certificate, Team 1012A XT Aluminium, Ten Ton Holiday Special (MS), December 16, 2023" loading="lazy">
+            </a>
+            <p class="award-title">Create Award</p>
+            <p class="award-meta">Ten Ton Holiday Special (MS) · Dec 16, 2023</p>
+          </li>
+          <li class="award-card">
+            <a class="award-thumb" href="images/trophy-vex-ten-ton-invitational-innovate-award-2026.jpg" target="_blank" rel="noopener">
+              <img src="images/trophy-vex-ten-ton-invitational-innovate-award-2026.jpg" alt="VEX Robotics Competition Innovate Award (MS) trophy, Ten Ton Invitational Push Back Tournament, January 31, 2026" loading="lazy">
+            </a>
+            <p class="award-title">Innovate Award (MS)</p>
+            <p class="award-meta">Ten Ton Invitational, Push Back · Jan 31, 2026</p>
+          </li>
+          <li class="award-card">
+            <a class="award-thumb" href="images/plaque-vexiq-innovate-award-ten-ton-fall-2024.jpg" target="_blank" rel="noopener">
+              <img src="images/plaque-vexiq-innovate-award-ten-ton-fall-2024.jpg" alt="VEX IQ Innovate Award (MS) plaque, Ten Ton Fall Festival Rapid Relay Competition, November 2, 2024" loading="lazy">
+            </a>
+            <p class="award-title">Innovate Award (MS)</p>
+            <p class="award-meta">Ten Ton Fall Festival, Rapid Relay · Nov 2, 2024</p>
+          </li>
+          <li class="award-card">
+            <a class="award-thumb" href="images/trophy-vexiq-roboplanet-robot-skills-2nd-2024.jpg" target="_blank" rel="noopener">
+              <img src="images/trophy-vexiq-roboplanet-robot-skills-2nd-2024.jpg" alt="VEX IQ Robot Skills 2nd Place trophy, Team 1012A, RoboPlanet Skills-only VIQRC, 2023-2024 season" loading="lazy">
+            </a>
+            <p class="award-title">Robot Skills 2nd Place</p>
+            <p class="award-meta">RoboPlanet Skills VIQRC · 2023–2024</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Chapter 03: Cadet & Academics -->
+    <section class="section section-chapter" id="chapter-cadet-academics" data-index="8">
+      <div class="chapter-inner">
+        <p class="chapter-number">03</p>
+        <h1 class="headline chapter-title">Cadet &amp; Academics</h1>
+        <p class="body-copy chapter-desc">Air Cadet qualifications, school recognition, and my academic pathway.</p>
+      </div>
+    </section>
+
+    <!-- Page 7 / Box 7: Cadet & Academic Recognition (Full-width gallery) -->
+    <section class="section section-stacked" id="section-7" data-index="9">
+      <div class="stacked-grid">
+        <div class="text-column">
+          <p class="eyebrow">Cadet &amp; Academics</p>
+          <h1 class="headline">Cadet &amp; Academic Recognition</h1>
+          <p class="body-copy">Qualifications and honours earned outside the robotics lab, through the Royal Canadian Air Cadets and at West Vancouver Secondary School.</p>
+          <p class="awards-callout">
+            <strong>Academic Pathway:</strong> Currently enrolled in the full PDP and applying for the full IB program at school.
+          </p>
+        </div>
+        <ul class="awards-grid awards-grid-featured" role="list">
+          <li class="award-card">
+            <a class="award-thumb" href="images/cert-cadet-advanced-aviation-2025.jpg" target="_blank" rel="noopener">
+              <img src="images/cert-cadet-advanced-aviation-2025.jpg" alt="Cadet Certificate of Qualification in Advanced Aviation, 103 Thunderbird RCACS, August 17, 2025" loading="lazy">
+            </a>
+            <p class="award-title">Advanced Aviation Qualification</p>
+            <p class="award-meta">103 Thunderbird RCACS · Aug 17, 2025</p>
+          </li>
+          <li class="award-card">
+            <a class="award-thumb" href="images/cert-wvss-highlander-distinguished-learner-2026.jpg" target="_blank" rel="noopener">
+              <img src="images/cert-wvss-highlander-distinguished-learner-2026.jpg" alt="West Vancouver Secondary School Highlander Distinguished Learner certificate, 2025-2026, presented June 30, 2026" loading="lazy">
+            </a>
+            <p class="award-title">Highlander Distinguished Learner</p>
+            <p class="award-meta">West Vancouver Secondary School · 2025–2026</p>
+          </li>
+        </ul>
       </div>
     </section>
 
