@@ -46,44 +46,99 @@
     </div>
   </header>
 
-  <!-- Minimalist Slide Navigation (Apple Keynote Style) -->
+  <!-- Minimalist Slide Navigation (Apple Keynote Style); hollow dots open a chapter -->
   <nav class="slide-nav" aria-label="Slide navigation">
     <button class="nav-dot nav-dot-chapter active" data-slide="0" aria-label="Go to chapter: Live Projects"></button>
-    <button class="nav-dot" data-slide="1" aria-label="Go to Wingmate: Air Cadet Hub"></button>
-    <button class="nav-dot" data-slide="2" aria-label="Go to DeltaLog"></button>
-    <button class="nav-dot" data-slide="3" aria-label="Go to Process Optimization"></button>
-    <button class="nav-dot nav-dot-chapter" data-slide="4" aria-label="Go to chapter: VEX Robotics"></button>
-    <button class="nav-dot" data-slide="5" aria-label="Go to VEX V5 Drivetrain CAD"></button>
-    <button class="nav-dot" data-slide="6" aria-label="Go to VEX Engineering Notebook"></button>
-    <button class="nav-dot" data-slide="7" aria-label="Go to VEX Robotics (VEX IQ &amp; VRC)"></button>
-    <button class="nav-dot nav-dot-chapter" data-slide="8" aria-label="Go to chapter: Cadet &amp; Academics"></button>
-    <button class="nav-dot" data-slide="9" aria-label="Go to Cadet &amp; Academic Recognition"></button>
+    <button class="nav-dot nav-dot-chapter" data-slide="1" aria-label="Go to chapter: Air Cadets"></button>
+    <button class="nav-dot" data-slide="2" aria-label="Go to 103 Thunderbird Squadron"></button>
+    <button class="nav-dot" data-slide="3" aria-label="Go to Wingmate"></button>
+    <button class="nav-dot nav-dot-chapter" data-slide="4" aria-label="Go to chapter: Robotics"></button>
+    <button class="nav-dot" data-slide="5" aria-label="Go to My VEX Story"></button>
+    <button class="nav-dot" data-slide="6" aria-label="Go to VEX V5 CAD Prototyping"></button>
+    <button class="nav-dot" data-slide="7" aria-label="Go to VEX Engineering Notebook"></button>
+    <button class="nav-dot" data-slide="8" aria-label="Go to VEX Robotics Awards"></button>
+    <button class="nav-dot nav-dot-chapter" data-slide="9" aria-label="Go to chapter: Academics"></button>
+    <button class="nav-dot" data-slide="10" aria-label="Go to Academic Recognition"></button>
+    <button class="nav-dot" data-slide="11" aria-label="Go to DeltaLog"></button>
+    <button class="nav-dot" data-slide="12" aria-label="Go to Process Optimization"></button>
   </nav>
 
   <!-- Main Scroll Snapping Presentation Container -->
   <main class="presentation-container">
 
-    <!-- Chapter 01: Live Projects -->
-    <section class="section section-chapter" id="chapter-projects" data-index="0">
+    <!-- ================================================================
+         Chapter 01: Live Projects (brief cards)
+         ================================================================ -->
+    <section class="section section-stacked" id="chapter-projects" data-index="0">
+      <div class="stacked-grid">
+        <div class="text-column">
+          <p class="chapter-number">01</p>
+          <h1 class="headline">Live Projects</h1>
+          <p class="body-copy">Tools I've built and deployed.</p>
+        </div>
+        <ul class="awards-grid projects-grid" role="list">
+          <li class="award-card">
+            <a class="award-thumb" href="https://ekanshvijay747-svg.github.io/Wingmate/" target="_blank" rel="noopener noreferrer" aria-label="Open Wingmate">
+              <img src="images/wingmate-home-dashboard.png" alt="Wingmate home screen with uniform and drill video guides" loading="lazy">
+            </a>
+            <p class="award-title">Wingmate ↗</p>
+            <p class="award-meta">Training hub for Air Cadets. Version 1 covers uniform standards with video guides. Aviation theory is next.</p>
+          </li>
+          <li class="award-card">
+            <a class="award-thumb" href="https://ekanshvijay747-svg.github.io/Mistake-log/" target="_blank" rel="noopener noreferrer" aria-label="Open DeltaLog">
+              <img src="images/deltalog-analytics-dashboard.png" alt="DeltaLog analytics dashboard" loading="lazy">
+            </a>
+            <p class="award-title">DeltaLog ↗</p>
+            <p class="award-meta">Mistake ledger for AMC 10 and competition math. Logs every lost point by error type to show where to improve.</p>
+          </li>
+          <li class="award-card">
+            <a class="award-thumb award-thumb-placeholder" href="https://ekanshvijay747-svg.github.io/blueprint-portfolio/" target="_blank" rel="noopener noreferrer" aria-label="Open 3D Blueprint">
+              <span aria-hidden="true">3D</span>
+            </a>
+            <p class="award-title">3D Blueprint ↗</p>
+            <p class="award-meta">Interactive 3D portfolio.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         Chapter 02: Air Cadets
+         ================================================================ -->
+    <section class="section section-chapter" id="chapter-air-cadets" data-index="1">
       <div class="chapter-inner">
-        <p class="chapter-number">01</p>
-        <h1 class="headline chapter-title">Live Projects</h1>
-        <p class="body-copy chapter-desc">Apps and systems I designed for Air Cadets and competitive math.</p>
-        <div class="project-link-wrapper chapter-links">
-          <a href="https://ekanshvijay747-svg.github.io/Wingmate/" target="_blank" rel="noopener noreferrer" class="project-link">Wingmate ↗</a>
-          <a href="https://ekanshvijay747-svg.github.io/blueprint-portfolio/" target="_blank" rel="noopener noreferrer" class="project-link">3D Blueprint ↗</a>
-          <a href="https://ekanshvijay747-svg.github.io/Mistake-log/" target="_blank" rel="noopener noreferrer" class="project-link">DeltaLog ↗</a>
+        <p class="chapter-number">02</p>
+        <h1 class="headline chapter-title">Air Cadets</h1>
+        <p class="body-copy chapter-desc">Four years with 103 Thunderbird Squadron, Royal Canadian Air Cadets.</p>
+      </div>
+    </section>
+
+    <!-- Air Cadets: Squadron role & qualifications (Text Left, Image Right) -->
+    <section class="section section-text-left" id="air-cadets-squadron" data-index="2">
+      <div class="section-grid">
+        <div class="text-column">
+          <p class="eyebrow">Air Cadets</p>
+          <h1 class="headline">103 Thunderbird Squadron</h1>
+          <p class="body-copy">I've been an active member of 103 Thunderbird Squadron for four years and have advanced to the rank of Sergeant. As a ground school instructor, I teach scholarship exam topics like air rules and procedures, propeller and engine instruments, and identifying Canadian satellites. As Band 2IC, I work with the Drum Major on rehearsals, attendance, and uniform inspection, and coach junior cadets one on one on tie knots, boot care, and badge placement.</p>
+          <p class="awards-callout">
+            <strong>Qualifications:</strong> Advanced Aviation, Aeronautical Radio licence, and First Aid certification.
+          </p>
+        </div>
+        <div class="image-column">
+          <a class="media-frame" href="images/cert-cadet-advanced-aviation-2025.jpg" target="_blank" rel="noopener">
+            <img src="images/cert-cadet-advanced-aviation-2025.jpg" alt="Cadet Certificate of Qualification in Advanced Aviation, 103 Thunderbird RCACS, August 17, 2025" loading="lazy">
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- Page 1 / Box 1: Wingmate (Text Left, Image Right) -->
-    <section class="section section-text-left" id="section-1" data-index="1">
+    <!-- Air Cadets: Wingmate story (Image Left, Text Right) -->
+    <section class="section section-image-left" id="air-cadets-wingmate" data-index="3">
       <div class="section-grid">
         <div class="text-column">
-          <p class="eyebrow">Live Projects</p>
+          <p class="eyebrow">Air Cadets</p>
           <h1 class="headline">Wingmate: Air Cadet Hub</h1>
-          <p class="body-copy">Wingmate is a mobile application I developed to centralize uniform regulations and aviation theory for the Air Cadet program. I spent the summer building this prototype to address the gap between scattered government manuals and practical application. The app provides offline video guides and a structured layout so cadets can easily locate uniform standards like badge placement and boot polishing. Changing the way cadets consume this knowledge helps the squadron improve standards through accessible design rather than forced memorization.</p>
+          <p class="body-copy">Teaching ground school, I saw scholarship exam prep boil down to &ldquo;memorize to get 60%.&rdquo; Cadets could define an altimeter but couldn't connect it to how cold fronts and barometric pressure skew its reading. Wingmate makes cadet knowledge easy to find and links related topics together. I started with the lowest-risk area, uniform standards, so version 1 covers ironing, boot polishing, badge placement, and uniform codes, with video guides and a discussion forum. I built it over the summer and presented it to the squadron's officers, who are reviewing it now. Phase 2 is a knowledge graph for aviation theory.</p>
           <div class="project-link-wrapper">
             <a href="https://ekanshvijay747-svg.github.io/Wingmate/" target="_blank" rel="noopener noreferrer" class="project-link">
               Live Deployment ↗
@@ -92,65 +147,54 @@
         </div>
         <div class="image-column">
           <div class="media-frame">
-            <img src="images/wingmate-home-dashboard.png" alt="Wingmate: Air Cadet Hub" loading="eager">
+            <img src="images/wingmate-home-dashboard.png" alt="Wingmate home screen with uniform and drill video guides" loading="lazy">
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Page 2 / Box 2: DeltaLog (Image Left, Text Right) -->
-    <section class="section section-image-left" id="section-2" data-index="2">
-      <div class="section-grid">
-        <div class="text-column">
-          <p class="eyebrow">Live Projects</p>
-          <h1 class="headline">DeltaLog</h1>
-          <p class="body-copy">I built DeltaLog to track and categorize my mistakes for the AMC 10 and competitive mathematics. Instead of simply studying harder, I used this system to log specific divergence points and cognitive blindspots. By tracking these trends over time, I discovered that my biggest contributors to lost points were perceptual misreads and calculation slips caused by rushing. Logging these specific errors allowed me to strategically adjust my test-taking process.</p>
-          <div class="project-link-wrapper">
-            <a href="https://ekanshvijay747-svg.github.io/Mistake-log/" target="_blank" rel="noopener noreferrer" class="project-link">
-              View Repository ↗
-            </a>
-          </div>
-        </div>
-        <div class="image-column">
-          <div class="media-frame">
-            <img src="images/deltalog-analytics-dashboard.png" alt="DeltaLog" loading="eager">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Page 3 / Box 3: Process Optimization (Text Left, Image Right) -->
-    <section class="section section-text-left" id="section-3" data-index="3">
-      <div class="section-grid">
-        <div class="text-column">
-          <p class="eyebrow">Live Projects</p>
-          <h1 class="headline">Process Optimization</h1>
-          <p class="body-copy">This is the AMC 10 Pre-Flight Checklist I designed to optimize my exam execution. I realized that my mock test scores stalled not because of a lack of math skills, but due to an unstructured approach to solving problems. I implemented a strict routine, including reading questions twice, constraint logging, and variable normalization. These process-driven changes, combined with 5:00 AM study blocks, significantly improved my performance by eliminating unforced errors.</p>
-        </div>
-        <div class="image-column">
-          <div class="media-frame">
-            <img src="images/deltalog-problem-classification.png" alt="Process Optimization" loading="eager">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Chapter 02: VEX Robotics -->
-    <section class="section section-chapter" id="chapter-vex" data-index="4">
+    <!-- ================================================================
+         Chapter 03: Robotics
+         ================================================================ -->
+    <section class="section section-chapter" id="chapter-robotics" data-index="4">
       <div class="chapter-inner">
-        <p class="chapter-number">02</p>
-        <h1 class="headline chapter-title">VEX Robotics</h1>
-        <p class="body-copy chapter-desc">CAD, engineering documentation, and competition awards from VEX IQ and VRC.</p>
+        <p class="chapter-number">03</p>
+        <h1 class="headline chapter-title">Robotics</h1>
+        <p class="body-copy chapter-desc">Five years of VEX IQ and VEX V5: design, build, documentation, and awards.</p>
       </div>
     </section>
 
-    <!-- Page 4 / Box 4: VEX V5 Drivetrain CAD (Image Left, Text Right) -->
-    <section class="section section-image-left" id="section-4" data-index="5">
+    <!-- Robotics: My VEX story (Full-width, three short chapters) -->
+    <section class="section section-stacked" id="robotics-story" data-index="5">
+      <div class="stacked-grid">
+        <div class="text-column">
+          <p class="eyebrow">Robotics</p>
+          <h1 class="headline">My VEX Story</h1>
+        </div>
+        <div class="story-grid">
+          <article class="story-card">
+            <h2 class="story-heading">Five years, every role</h2>
+            <p class="story-copy">I've competed in VEX since elementary school, starting with plastic VEX IQ builds and moving up to metal VEX V5. I've worked every role a team needs. This year I'm the designer, co-builder, and author of our Engineering Notebook.</p>
+          </article>
+          <article class="story-card">
+            <h2 class="story-heading">Innovate Award</h2>
+            <p class="story-copy">In one season I reworked our intake to sort blocks by colour. A small gap in the rubber-band wall let only the smaller blue blocks through, so the robot could drop one colour at a time and earn the uniformity bonus. That design won us the Innovate Award.</p>
+          </article>
+          <article class="story-card">
+            <h2 class="story-heading">Judges Award</h2>
+            <p class="story-copy">Two days before one competition, our intake kept missing balls, the drivetrain lacked torque, and my teammate wanted to skip. I stayed after class to talk it through. We split up the judging interview and were honest about where the robot stood. We didn't do well on the field, but we won the Judges Award for resilience.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Robotics: CAD prototyping (Text Left, Image Right) -->
+    <section class="section section-text-left" id="robotics-cad" data-index="6">
       <div class="section-grid">
         <div class="text-column">
-          <p class="eyebrow">VEX Robotics</p>
-          <h1 class="headline">VEX V5 Drivetrain CAD</h1>
-          <p class="body-copy">I taught myself CAD to prototype our VEX V5 robot before committing to a physical build, as metal parts are costly to fix once cut. I modeled the drivetrain over the summer to determine exact gear ratios and motor layouts ahead of time. Documenting the physical topology and sizing constraints gave our team a significant head-start, allowing us to have a fully functional drivetrain running within a week of the robotics lab opening.</p>
+          <p class="eyebrow">Robotics</p>
+          <h1 class="headline">VEX V5 CAD Prototyping</h1>
+          <p class="body-copy">VEX V5 builds are metal, so mistakes are costly to fix once parts are cut. I taught myself CAD to prototype before we build. Over the summer I modeled our drivetrain and intake, which set the gear ratios, motor layout, and robot dimensions ahead of build time. Our drivetrain was running within a week of the robotics lab opening, and the head start let the team prototype two mechanisms, a cascade lift and a double reverse four-bar.</p>
           <div class="project-link-wrapper">
             <a href="https://cad.onshape.com/documents/c4b3265a548a030d938995ea/w/352663e6b6c9ae3446b81cca/e/decb3470c9fe17a22a3c8e25" target="_blank" rel="noopener noreferrer" class="project-link">
               View 3D Onshape Model ↗
@@ -159,36 +203,33 @@
         </div>
         <div class="image-column">
           <div class="media-frame">
-            <img src="images/vex-v5-drivetrain-cad.png" alt="VEX V5 Drivetrain CAD" loading="eager">
+            <img src="images/vex-v5-drivetrain-cad.png" alt="VEX V5 drivetrain CAD model" loading="lazy">
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Page 5 / Box 5: VEX Engineering Notebook (Text Left, Image Right) -->
-    <section class="section section-text-left" id="section-5" data-index="6">
+    <!-- Robotics: Engineering Notebook (Image Left, Text Right) -->
+    <section class="section section-image-left" id="robotics-notebook" data-index="7">
       <div class="section-grid">
         <div class="text-column">
-          <p class="eyebrow">VEX Robotics</p>
+          <p class="eyebrow">Robotics</p>
           <h1 class="headline">VEX Engineering Notebook</h1>
-          <p class="body-copy">This section of our Engineering Notebook documents our weekly deliverables and subsystem power budgets. To fix our team's unstructured approach to the build season, I implemented a system where we committed to bite-sized goals every Monday and reviewed them on Friday. Documenting our empirical subsystem verification and tracking these milestones allowed us to make steady progress, easing the pressure before competitions and directly contributing to our Judges Award.</p>
-          <p class="awards-callout">
-            <strong>Recognitions:</strong> Multiple-time VEX IQ and V5 award winner, including the Design, Innovate, Robot Skills, and Judges Awards.
-          </p>
+          <p class="body-copy">I author our Engineering Notebook, documenting each iteration, its strengths and weaknesses, and our testing. Our team used to scramble in the final week before competitions, so I suggested a rule: commit to goals on Monday and check progress on Friday. The first weeks were a disaster, with goals forgotten, vague, or too ambitious. Instead of dropping the idea, we switched to smaller written goals planned around school work. We were still chaotic, but we started finishing what we committed to, and that steady progress eased the final-week pressure and improved the robot we brought to competition.</p>
         </div>
         <div class="image-column">
           <div class="media-frame">
-            <img src="images/vex-v5-engineering-notebook.png" alt="VEX Engineering Notebook" loading="eager">
+            <img src="images/vex-v5-engineering-notebook.png" alt="VEX V5 Engineering Notebook page with power budget and verification tables" loading="lazy">
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Page 6 / Box 6: VEX Robotics Awards (Full-width gallery) -->
-    <section class="section section-stacked" id="section-6" data-index="7">
+    <!-- Robotics: All awards (Full-width gallery, certificates first) -->
+    <section class="section section-stacked" id="robotics-awards" data-index="8">
       <div class="stacked-grid">
         <div class="text-column">
-          <p class="eyebrow">VEX Robotics</p>
+          <p class="eyebrow">Robotics</p>
           <h1 class="headline">VEX Robotics (VEX IQ &amp; VRC)</h1>
           <p class="body-copy">Recognition from VEX robotics competitions in British Columbia, from December 2023 to January 2026, spanning design, innovation, robot skills, and judged awards.</p>
         </div>
@@ -253,42 +294,70 @@
       </div>
     </section>
 
-    <!-- Chapter 03: Cadet & Academics -->
-    <section class="section section-chapter" id="chapter-cadet-academics" data-index="8">
+    <!-- ================================================================
+         Chapter 04: Academics
+         ================================================================ -->
+    <section class="section section-chapter" id="chapter-academics" data-index="9">
       <div class="chapter-inner">
-        <p class="chapter-number">03</p>
-        <h1 class="headline chapter-title">Cadet &amp; Academics</h1>
-        <p class="body-copy chapter-desc">Air Cadet qualifications, school recognition, and my academic pathway.</p>
+        <p class="chapter-number">04</p>
+        <h1 class="headline chapter-title">Academics</h1>
+        <p class="body-copy chapter-desc">School recognition, my academic pathway, and how I train for competitive math.</p>
       </div>
     </section>
 
-    <!-- Page 7 / Box 7: Cadet & Academic Recognition (Full-width gallery) -->
-    <section class="section section-stacked" id="section-7" data-index="9">
-      <div class="stacked-grid">
+    <!-- Academics: Recognition & pathway (Text Left, Image Right) -->
+    <section class="section section-text-left" id="academics-recognition" data-index="10">
+      <div class="section-grid">
         <div class="text-column">
-          <p class="eyebrow">Cadet &amp; Academics</p>
-          <h1 class="headline">Cadet &amp; Academic Recognition</h1>
-          <p class="body-copy">Qualifications and honours earned outside the robotics lab, through the Royal Canadian Air Cadets and at West Vancouver Secondary School.</p>
+          <p class="eyebrow">Academics</p>
+          <h1 class="headline">Academic Recognition</h1>
+          <p class="body-copy">Student at West Vancouver Secondary School, in the full PDP and targeting the full IB program.</p>
           <p class="awards-callout">
-            <strong>Academic Pathway:</strong> Currently enrolled in the full PDP and applying for the full IB program at school.
+            <strong>Highlander Distinguished Learner:</strong> Two years running, most recently for 2025–2026.
           </p>
         </div>
-        <ul class="awards-grid awards-grid-featured" role="list">
-          <li class="award-card">
-            <a class="award-thumb" href="images/cert-cadet-advanced-aviation-2025.jpg" target="_blank" rel="noopener">
-              <img src="images/cert-cadet-advanced-aviation-2025.jpg" alt="Cadet Certificate of Qualification in Advanced Aviation, 103 Thunderbird RCACS, August 17, 2025" loading="lazy">
+        <div class="image-column">
+          <a class="media-frame" href="images/cert-wvss-highlander-distinguished-learner-2026.jpg" target="_blank" rel="noopener">
+            <img src="images/cert-wvss-highlander-distinguished-learner-2026.jpg" alt="West Vancouver Secondary School Highlander Distinguished Learner certificate, 2025-2026, presented June 30, 2026" loading="lazy">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Academics: DeltaLog (Image Left, Text Right) -->
+    <section class="section section-image-left" id="academics-deltalog" data-index="11">
+      <div class="section-grid">
+        <div class="text-column">
+          <p class="eyebrow">Academics</p>
+          <h1 class="headline">DeltaLog</h1>
+          <p class="body-copy">I built DeltaLog to track and categorize my mistakes for the AMC 10 and competitive mathematics. Instead of simply studying harder, I used this system to log specific divergence points and cognitive blindspots. By tracking these trends over time, I discovered that my biggest contributors to lost points were perceptual misreads and calculation slips caused by rushing. Logging these specific errors allowed me to strategically adjust my test-taking process.</p>
+          <div class="project-link-wrapper">
+            <a href="https://ekanshvijay747-svg.github.io/Mistake-log/" target="_blank" rel="noopener noreferrer" class="project-link">
+              Open DeltaLog ↗
             </a>
-            <p class="award-title">Advanced Aviation Qualification</p>
-            <p class="award-meta">103 Thunderbird RCACS · Aug 17, 2025</p>
-          </li>
-          <li class="award-card">
-            <a class="award-thumb" href="images/cert-wvss-highlander-distinguished-learner-2026.jpg" target="_blank" rel="noopener">
-              <img src="images/cert-wvss-highlander-distinguished-learner-2026.jpg" alt="West Vancouver Secondary School Highlander Distinguished Learner certificate, 2025-2026, presented June 30, 2026" loading="lazy">
-            </a>
-            <p class="award-title">Highlander Distinguished Learner</p>
-            <p class="award-meta">West Vancouver Secondary School · 2025–2026</p>
-          </li>
-        </ul>
+          </div>
+        </div>
+        <div class="image-column">
+          <div class="media-frame">
+            <img src="images/deltalog-analytics-dashboard.png" alt="DeltaLog analytics dashboard" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Academics: Process Optimization (Text Left, Image Right) -->
+    <section class="section section-text-left" id="academics-process" data-index="12">
+      <div class="section-grid">
+        <div class="text-column">
+          <p class="eyebrow">Academics</p>
+          <h1 class="headline">Process Optimization</h1>
+          <p class="body-copy">This is the AMC 10 Pre-Flight Checklist I designed to optimize my exam execution. I realized that my mock test scores stalled not because of a lack of math skills, but due to an unstructured approach to solving problems. I implemented a strict routine, including reading questions twice, constraint logging, and variable normalization. These process-driven changes, combined with 5:00 AM study blocks, significantly improved my performance by eliminating unforced errors.</p>
+        </div>
+        <div class="image-column">
+          <div class="media-frame">
+            <img src="images/deltalog-problem-classification.png" alt="DeltaLog problem classification form" loading="lazy">
+          </div>
+        </div>
       </div>
     </section>
 

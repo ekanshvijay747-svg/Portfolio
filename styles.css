@@ -479,6 +479,74 @@ body {
 }
 
 /* ==========================================================================
+   Live Project Cards & Robotics Story Columns
+   ========================================================================== */
+
+.projects-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.projects-grid .award-thumb {
+  height: min(34vh, 320px);
+}
+
+.projects-grid .award-meta {
+  font-size: clamp(0.88rem, 1vw, 1rem);
+  line-height: 1.5;
+  color: #A1A1A6;
+}
+
+.award-thumb-placeholder {
+  text-decoration: none;
+}
+
+.award-thumb-placeholder span {
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1rem, 2vw, 2rem);
+}
+
+.story-card {
+  padding: clamp(1.25rem, 2vw, 1.75rem);
+  background: var(--card-bg);
+  border: 1px solid var(--border-subtle);
+  border-radius: 18px;
+}
+
+.story-heading {
+  margin: 0 0 0.75rem 0;
+  font-size: clamp(1.1rem, 1.4vw, 1.4rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-headline);
+}
+
+.story-copy {
+  margin: 0;
+  font-size: clamp(0.98rem, 1.1vw, 1.12rem);
+  line-height: 1.62;
+  color: var(--text-body);
+}
+
+/* Certificate frames are links that open the full-size scan */
+a.media-frame {
+  text-decoration: none;
+  cursor: zoom-in;
+}
+
+a.media-frame:focus-visible {
+  outline: 2px solid #FFFFFF;
+  outline-offset: 3px;
+}
+
+/* ==========================================================================
    Chapter Title Slides & Eyebrow Labels
    ========================================================================== */
 
@@ -588,6 +656,7 @@ body {
 .project-link-wrapper,
 .awards-callout,
 .awards-grid,
+.story-grid,
 .media-frame {
   opacity: 0;
   transform: translateY(30px);
@@ -622,7 +691,8 @@ body {
 }
 
 .section.is-visible .media-frame,
-.section.is-visible .awards-grid {
+.section.is-visible .awards-grid,
+.section.is-visible .story-grid {
   opacity: 1;
   transform: translateY(0);
   transition-delay: 0.12s;
@@ -746,6 +816,15 @@ body {
     font-size: clamp(2.6rem, 11vw, 3.6rem);
   }
 
+  .projects-grid,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid .award-thumb {
+    height: 24vh;
+  }
+
   .awards-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1rem;
@@ -776,6 +855,7 @@ body {
   .project-link-wrapper,
   .awards-callout,
   .awards-grid,
+  .story-grid,
   .media-frame {
     opacity: 1 !important;
     transform: none !important;
