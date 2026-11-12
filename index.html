@@ -15,7 +15,7 @@
   <header class="global-nav">
     <div class="projects-dropdown" id="projectsDropdown">
       <button class="dropdown-trigger" id="dropdownTrigger" aria-expanded="false" aria-haspopup="true">
-        <span>Live Projects</span>
+        <span>Apps and Tools ↗</span>
         <svg class="chevron-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
           <path d="m6 9 6 6 6-6"/>
         </svg>
@@ -25,13 +25,6 @@
           <div class="item-info">
             <span class="item-title">Wingmate</span>
             <span class="item-desc">Air Cadet Hub</span>
-          </div>
-          <span class="item-arrow">↗</span>
-        </a>
-        <a href="https://ekanshvijay747-svg.github.io/blueprint-portfolio/" target="_blank" rel="noopener noreferrer" class="dropdown-item" role="menuitem">
-          <div class="item-info">
-            <span class="item-title">3D Blueprint</span>
-            <span class="item-desc">Interactive Portfolio</span>
           </div>
           <span class="item-arrow">↗</span>
         </a>
@@ -48,55 +41,66 @@
 
   <!-- Minimalist Slide Navigation (Apple Keynote Style); hollow dots open a chapter -->
   <nav class="slide-nav" aria-label="Slide navigation">
-    <button class="nav-dot nav-dot-chapter active" data-slide="0" aria-label="Go to chapter: Live Projects"></button>
-    <button class="nav-dot nav-dot-chapter" data-slide="1" aria-label="Go to chapter: Air Cadets"></button>
-    <button class="nav-dot" data-slide="2" aria-label="Go to 103 Thunderbird Squadron"></button>
-    <button class="nav-dot" data-slide="3" aria-label="Go to Wingmate"></button>
-    <button class="nav-dot nav-dot-chapter" data-slide="4" aria-label="Go to chapter: Robotics"></button>
-    <button class="nav-dot" data-slide="5" aria-label="Go to My VEX Story"></button>
-    <button class="nav-dot" data-slide="6" aria-label="Go to VEX V5 CAD Prototyping"></button>
-    <button class="nav-dot" data-slide="7" aria-label="Go to VEX Engineering Notebook"></button>
-    <button class="nav-dot" data-slide="8" aria-label="Go to VEX Robotics Awards"></button>
-    <button class="nav-dot nav-dot-chapter" data-slide="9" aria-label="Go to chapter: Academics"></button>
-    <button class="nav-dot" data-slide="10" aria-label="Go to Academic Recognition"></button>
-    <button class="nav-dot" data-slide="11" aria-label="Go to DeltaLog"></button>
-    <button class="nav-dot" data-slide="12" aria-label="Go to Process Optimization"></button>
+    <button class="nav-dot active" data-slide="0" aria-label="Go to introduction"></button>
+    <button class="nav-dot nav-dot-chapter" data-slide="1" aria-label="Go to chapter: Apps and Tools"></button>
+    <button class="nav-dot nav-dot-chapter" data-slide="2" aria-label="Go to chapter: Air Cadets"></button>
+    <button class="nav-dot" data-slide="3" aria-label="Go to 103 Thunderbird Squadron"></button>
+    <button class="nav-dot" data-slide="4" aria-label="Go to Wingmate: Air Cadet Hub"></button>
+    <button class="nav-dot nav-dot-chapter" data-slide="5" aria-label="Go to chapter: Robotics"></button>
+    <button class="nav-dot" data-slide="6" aria-label="Go to My VEX Story"></button>
+    <button class="nav-dot" data-slide="7" aria-label="Go to VEX V5 CAD Prototyping"></button>
+    <button class="nav-dot" data-slide="8" aria-label="Go to VEX Engineering Notebook"></button>
+    <button class="nav-dot" data-slide="9" aria-label="Go to VEX Robotics (VEX IQ &amp; VRC)"></button>
+    <button class="nav-dot nav-dot-chapter" data-slide="10" aria-label="Go to chapter: Academics"></button>
+    <button class="nav-dot" data-slide="11" aria-label="Go to Academic Recognition"></button>
+    <button class="nav-dot" data-slide="12" aria-label="Go to DeltaLog"></button>
+    <button class="nav-dot" data-slide="13" aria-label="Go to Process Optimization"></button>
   </nav>
 
   <!-- Main Scroll Snapping Presentation Container -->
   <main class="presentation-container">
 
+    <!-- Intro: name, chapter index, scroll prompt -->
+    <section class="section section-chapter section-intro" id="intro" data-index="0">
+      <div class="chapter-inner">
+        <p class="chapter-number">Portfolio</p>
+        <h1 class="headline chapter-title">Ekansh Vijay</h1>
+        <p class="body-copy chapter-desc">Student at West Vancouver Secondary School.<br>A PDP student who loves robotics and is trying out app building with the help of AI.</p>
+        <nav class="chapter-links chapter-index" aria-label="Jump to a chapter">
+          <a href="#chapter-projects" class="project-link"><span class="index-num">01</span> Apps and Tools</a>
+          <a href="#chapter-air-cadets" class="project-link"><span class="index-num">02</span> Air Cadets</a>
+          <a href="#chapter-robotics" class="project-link"><span class="index-num">03</span> Robotics</a>
+          <a href="#chapter-academics" class="project-link"><span class="index-num">04</span> Academics</a>
+        </nav>
+      </div>
+    </section>
+
     <!-- ================================================================
-         Chapter 01: Live Projects (brief cards)
+         Chapter 01: Apps and Tools (brief cards)
          ================================================================ -->
-    <section class="section section-stacked" id="chapter-projects" data-index="0">
+    <section class="section section-stacked" id="chapter-projects" data-index="1">
       <div class="stacked-grid">
         <div class="text-column">
           <p class="chapter-number">01</p>
-          <h1 class="headline">Live Projects</h1>
+          <h1 class="headline">Apps and Tools</h1>
           <p class="body-copy">Tools I've built and deployed.</p>
         </div>
         <ul class="awards-grid projects-grid" role="list">
           <li class="award-card">
-            <a class="award-thumb" href="https://ekanshvijay747-svg.github.io/Wingmate/" target="_blank" rel="noopener noreferrer" aria-label="Open Wingmate">
+            <div class="award-thumb">
               <img src="images/wingmate-home-dashboard.png" alt="Wingmate home screen with uniform and drill video guides" loading="lazy">
-            </a>
-            <p class="award-title">Wingmate ↗</p>
+            </div>
+            <p class="award-title">Wingmate</p>
             <p class="award-meta">Training hub for Air Cadets. Version 1 covers uniform standards with video guides. Aviation theory is next.</p>
+            <a href="https://ekanshvijay747-svg.github.io/Wingmate/" target="_blank" rel="noopener noreferrer" class="project-link card-link">Live Deployment ↗</a>
           </li>
           <li class="award-card">
-            <a class="award-thumb" href="https://ekanshvijay747-svg.github.io/Mistake-log/" target="_blank" rel="noopener noreferrer" aria-label="Open DeltaLog">
+            <div class="award-thumb">
               <img src="images/deltalog-analytics-dashboard.png" alt="DeltaLog analytics dashboard" loading="lazy">
-            </a>
-            <p class="award-title">DeltaLog ↗</p>
+            </div>
+            <p class="award-title">DeltaLog</p>
             <p class="award-meta">Mistake ledger for AMC 10 and competition math. Logs every lost point by error type to show where to improve.</p>
-          </li>
-          <li class="award-card">
-            <a class="award-thumb award-thumb-placeholder" href="https://ekanshvijay747-svg.github.io/blueprint-portfolio/" target="_blank" rel="noopener noreferrer" aria-label="Open 3D Blueprint">
-              <span aria-hidden="true">3D</span>
-            </a>
-            <p class="award-title">3D Blueprint ↗</p>
-            <p class="award-meta">Interactive 3D portfolio.</p>
+            <a href="https://ekanshvijay747-svg.github.io/Mistake-log/" target="_blank" rel="noopener noreferrer" class="project-link card-link">Live Deployment ↗</a>
           </li>
         </ul>
       </div>
@@ -105,7 +109,7 @@
     <!-- ================================================================
          Chapter 02: Air Cadets
          ================================================================ -->
-    <section class="section section-chapter" id="chapter-air-cadets" data-index="1">
+    <section class="section section-chapter" id="chapter-air-cadets" data-index="2">
       <div class="chapter-inner">
         <p class="chapter-number">02</p>
         <h1 class="headline chapter-title">Air Cadets</h1>
@@ -114,7 +118,7 @@
     </section>
 
     <!-- Air Cadets: Squadron role & qualifications (Text Left, Image Right) -->
-    <section class="section section-text-left" id="air-cadets-squadron" data-index="2">
+    <section class="section section-text-left" id="air-cadets-squadron" data-index="3">
       <div class="section-grid">
         <div class="text-column">
           <p class="eyebrow">Air Cadets</p>
@@ -126,15 +130,15 @@
           </p>
         </div>
         <div class="image-column">
-          <a class="media-frame" href="images/cert-cadet-advanced-aviation-2025.jpg" target="_blank" rel="noopener">
+          <div class="media-frame">
             <img src="images/cert-cadet-advanced-aviation-2025.jpg" alt="Cadet Certificate of Qualification in Advanced Aviation, 103 Thunderbird RCACS, August 17, 2025" loading="lazy">
-          </a>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Air Cadets: Wingmate story (Image Left, Text Right) -->
-    <section class="section section-image-left" id="air-cadets-wingmate" data-index="3">
+    <section class="section section-image-left" id="air-cadets-wingmate" data-index="4">
       <div class="section-grid">
         <div class="text-column">
           <p class="eyebrow">Air Cadets</p>
@@ -157,7 +161,7 @@
     <!-- ================================================================
          Chapter 03: Robotics
          ================================================================ -->
-    <section class="section section-chapter" id="chapter-robotics" data-index="4">
+    <section class="section section-chapter" id="chapter-robotics" data-index="5">
       <div class="chapter-inner">
         <p class="chapter-number">03</p>
         <h1 class="headline chapter-title">Robotics</h1>
@@ -166,7 +170,7 @@
     </section>
 
     <!-- Robotics: My VEX story (Full-width, three short chapters) -->
-    <section class="section section-stacked" id="robotics-story" data-index="5">
+    <section class="section section-stacked" id="robotics-story" data-index="6">
       <div class="stacked-grid">
         <div class="text-column">
           <p class="eyebrow">Robotics</p>
@@ -190,7 +194,7 @@
     </section>
 
     <!-- Robotics: CAD prototyping (Text Left, Image Right) -->
-    <section class="section section-text-left" id="robotics-cad" data-index="6">
+    <section class="section section-text-left" id="robotics-cad" data-index="7">
       <div class="section-grid">
         <div class="text-column">
           <p class="eyebrow">Robotics</p>
@@ -211,7 +215,7 @@
     </section>
 
     <!-- Robotics: Engineering Notebook (Image Left, Text Right) -->
-    <section class="section section-image-left" id="robotics-notebook" data-index="7">
+    <section class="section section-image-left" id="robotics-notebook" data-index="8">
       <div class="section-grid">
         <div class="text-column">
           <p class="eyebrow">Robotics</p>
@@ -227,7 +231,7 @@
     </section>
 
     <!-- Robotics: All awards (Full-width gallery, certificates first) -->
-    <section class="section section-stacked" id="robotics-awards" data-index="8">
+    <section class="section section-stacked" id="robotics-awards" data-index="9">
       <div class="stacked-grid">
         <div class="text-column">
           <p class="eyebrow">Robotics</p>
@@ -236,58 +240,58 @@
         </div>
         <ul class="awards-grid" role="list">
           <li class="award-card">
-            <a class="award-thumb" href="images/cert-vexiq-judges-award-bc-provincials-2025.jpg" target="_blank" rel="noopener">
+            <div class="award-thumb">
               <img src="images/cert-vexiq-judges-award-bc-provincials-2025.jpg" alt="VEX IQ Judges Award certificate, Team 1021S Ten Ton Robotics, BC Provincials (MS), February 23, 2025" loading="lazy">
-            </a>
+            </div>
             <p class="award-title">Judges Award</p>
             <p class="award-meta">VEX IQ BC Provincials (MS) · Feb 23, 2025</p>
           </li>
           <li class="award-card">
-            <a class="award-thumb" href="images/cert-vexiq-judges-award-bc-provincials-2024.jpg" target="_blank" rel="noopener">
+            <div class="award-thumb">
               <img src="images/cert-vexiq-judges-award-bc-provincials-2024.jpg" alt="VEX IQ Judges Award certificate, Team 1012A XT Aluminium, BC Provincials (MS), February 25, 2024" loading="lazy">
-            </a>
+            </div>
             <p class="award-title">Judges Award</p>
             <p class="award-meta">VEX IQ BC Provincials (MS) · Feb 25, 2024</p>
           </li>
           <li class="award-card">
-            <a class="award-thumb" href="images/cert-vexiq-robot-skills-champion-2024.jpg" target="_blank" rel="noopener">
+            <div class="award-thumb">
               <img src="images/cert-vexiq-robot-skills-champion-2024.jpg" alt="VEX IQ Robot Skills Champion certificate, Team 1012A XT Aluminium, Ten Ton New Year Invitational (MS), January 13, 2024" loading="lazy">
-            </a>
+            </div>
             <p class="award-title">Robot Skills Champion</p>
             <p class="award-meta">Ten Ton New Year Invitational (MS) · Jan 13, 2024</p>
           </li>
           <li class="award-card">
-            <a class="award-thumb" href="images/cert-vexiq-design-award-2024.jpg" target="_blank" rel="noopener">
+            <div class="award-thumb">
               <img src="images/cert-vexiq-design-award-2024.jpg" alt="VEX IQ Design Award certificate, Team 1012A XT Aluminium, Ten Ton New Year Invitational (MS), January 13, 2024" loading="lazy">
-            </a>
+            </div>
             <p class="award-title">Design Award</p>
             <p class="award-meta">Ten Ton New Year Invitational (MS) · Jan 13, 2024</p>
           </li>
           <li class="award-card">
-            <a class="award-thumb" href="images/cert-vexiq-create-award-2023.jpg" target="_blank" rel="noopener">
+            <div class="award-thumb">
               <img src="images/cert-vexiq-create-award-2023.jpg" alt="VEX IQ Create Award certificate, Team 1012A XT Aluminium, Ten Ton Holiday Special (MS), December 16, 2023" loading="lazy">
-            </a>
+            </div>
             <p class="award-title">Create Award</p>
             <p class="award-meta">Ten Ton Holiday Special (MS) · Dec 16, 2023</p>
           </li>
           <li class="award-card">
-            <a class="award-thumb" href="images/trophy-vex-ten-ton-invitational-innovate-award-2026.jpg" target="_blank" rel="noopener">
+            <div class="award-thumb">
               <img src="images/trophy-vex-ten-ton-invitational-innovate-award-2026.jpg" alt="VEX Robotics Competition Innovate Award (MS) trophy, Ten Ton Invitational Push Back Tournament, January 31, 2026" loading="lazy">
-            </a>
+            </div>
             <p class="award-title">Innovate Award (MS)</p>
             <p class="award-meta">Ten Ton Invitational, Push Back · Jan 31, 2026</p>
           </li>
           <li class="award-card">
-            <a class="award-thumb" href="images/plaque-vexiq-innovate-award-ten-ton-fall-2024.jpg" target="_blank" rel="noopener">
+            <div class="award-thumb">
               <img src="images/plaque-vexiq-innovate-award-ten-ton-fall-2024.jpg" alt="VEX IQ Innovate Award (MS) plaque, Ten Ton Fall Festival Rapid Relay Competition, November 2, 2024" loading="lazy">
-            </a>
+            </div>
             <p class="award-title">Innovate Award (MS)</p>
             <p class="award-meta">Ten Ton Fall Festival, Rapid Relay · Nov 2, 2024</p>
           </li>
           <li class="award-card">
-            <a class="award-thumb" href="images/trophy-vexiq-roboplanet-robot-skills-2nd-2024.jpg" target="_blank" rel="noopener">
+            <div class="award-thumb">
               <img src="images/trophy-vexiq-roboplanet-robot-skills-2nd-2024.jpg" alt="VEX IQ Robot Skills 2nd Place trophy, Team 1012A, RoboPlanet Skills-only VIQRC, 2023-2024 season" loading="lazy">
-            </a>
+            </div>
             <p class="award-title">Robot Skills 2nd Place</p>
             <p class="award-meta">RoboPlanet Skills VIQRC · 2023–2024</p>
           </li>
@@ -298,7 +302,7 @@
     <!-- ================================================================
          Chapter 04: Academics
          ================================================================ -->
-    <section class="section section-chapter" id="chapter-academics" data-index="9">
+    <section class="section section-chapter" id="chapter-academics" data-index="10">
       <div class="chapter-inner">
         <p class="chapter-number">04</p>
         <h1 class="headline chapter-title">Academics</h1>
@@ -307,7 +311,7 @@
     </section>
 
     <!-- Academics: Recognition & pathway (Text Left, Image Right) -->
-    <section class="section section-text-left" id="academics-recognition" data-index="10">
+    <section class="section section-text-left" id="academics-recognition" data-index="11">
       <div class="section-grid">
         <div class="text-column">
           <p class="eyebrow">Academics</p>
@@ -318,15 +322,15 @@
           </p>
         </div>
         <div class="image-column">
-          <a class="media-frame" href="images/cert-wvss-highlander-distinguished-learner-2026.jpg" target="_blank" rel="noopener">
+          <div class="media-frame">
             <img src="images/cert-wvss-highlander-distinguished-learner-2026.jpg" alt="West Vancouver Secondary School Highlander Distinguished Learner certificate, 2025-2026, presented June 30, 2026" loading="lazy">
-          </a>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Academics: DeltaLog (Image Left, Text Right) -->
-    <section class="section section-image-left" id="academics-deltalog" data-index="11">
+    <section class="section section-image-left" id="academics-deltalog" data-index="12">
       <div class="section-grid">
         <div class="text-column">
           <p class="eyebrow">Academics</p>
@@ -334,7 +338,7 @@
           <p class="body-copy">I built DeltaLog to track and categorize my mistakes for the AMC 10 and competitive mathematics. Instead of simply studying harder, I used this system to log specific divergence points and cognitive blindspots. By tracking these trends over time, I discovered that my biggest contributors to lost points were perceptual misreads and calculation slips caused by rushing. Logging these specific errors allowed me to strategically adjust my test-taking process.</p>
           <div class="project-link-wrapper">
             <a href="https://ekanshvijay747-svg.github.io/Mistake-log/" target="_blank" rel="noopener noreferrer" class="project-link">
-              Open DeltaLog ↗
+              Live Deployment ↗
             </a>
           </div>
         </div>
@@ -347,7 +351,7 @@
     </section>
 
     <!-- Academics: Process Optimization (Text Left, Image Right) -->
-    <section class="section section-text-left" id="academics-process" data-index="12">
+    <section class="section section-text-left" id="academics-process" data-index="13">
       <div class="section-grid">
         <div class="text-column">
           <p class="eyebrow">Academics</p>
@@ -363,6 +367,14 @@
     </section>
 
   </main>
+
+  <!-- Persistent scroll prompt: full label on the intro, arrow-only after -->
+  <button class="scroll-cue" id="scrollCue" type="button" aria-label="Scroll to next section">
+    <span class="scroll-cue-label">Scroll to explore</span>
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="m6 9 6 6 6-6"/>
+    </svg>
+  </button>
 
   <script src="script.js"></script>
 </body>

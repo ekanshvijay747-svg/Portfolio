@@ -62,6 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   function updateActiveDot(index) {
+    updateScrollCue(index);
     dots.forEach((dot, i) => {
       if (i === index) {
         dot.classList.add('active');
@@ -74,6 +75,25 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // 3. Navigation Dots Click Handlers
+  // 3a. Persistent scroll prompt: labelled on the intro, arrow-only after,
+  //     hidden on the last slide so it never points at nothing.
+  const scrollCue = document.getElementById('scrollCue');
+
+  function updateScrollCue(index) {
+    if (!scrollCue) return;
+    scrollCue.classList.toggle('is-compact', index > 0);
+    scrollCue.classList.toggle('is-hidden', index >= sections.length - 1);
+  }
+
+  if (scrollCue) {
+    scrollCue.addEventListener('click', () => {
+      const next = sections[currentSlide + 1];
+      if (next) next.scrollIntoView({ behavior: 'smooth' });
+    });
+    updateScrollCue(0);
+  }
+
+  // 3b. Navigation Dots Click Handlers
   dots.forEach((dot) => {
     dot.addEventListener('click', () => {
       const slideIndex = parseInt(dot.getAttribute('data-slide'), 10);

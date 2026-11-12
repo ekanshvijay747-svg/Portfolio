@@ -442,17 +442,6 @@ body {
   height: min(44vh, 420px);
 }
 
-.award-thumb:hover,
-.award-thumb:focus-visible {
-  transform: translateY(-3px);
-  border-color: var(--border-focus);
-}
-
-.award-thumb:focus-visible {
-  outline: 2px solid #FFFFFF;
-  outline-offset: 3px;
-}
-
 .award-thumb img {
   max-width: 100%;
   max-height: 100%;
@@ -483,7 +472,8 @@ body {
    ========================================================================== */
 
 .projects-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 1100px;
 }
 
 .projects-grid .award-thumb {
@@ -494,17 +484,6 @@ body {
   font-size: clamp(0.88rem, 1vw, 1rem);
   line-height: 1.5;
   color: #A1A1A6;
-}
-
-.award-thumb-placeholder {
-  text-decoration: none;
-}
-
-.award-thumb-placeholder span {
-  font-size: clamp(3rem, 5vw, 4.5rem);
-  font-weight: 800;
-  letter-spacing: -0.04em;
-  color: rgba(255, 255, 255, 0.85);
 }
 
 .story-grid {
@@ -535,15 +514,9 @@ body {
   color: var(--text-body);
 }
 
-/* Certificate frames are links that open the full-size scan */
-a.media-frame {
-  text-decoration: none;
-  cursor: zoom-in;
-}
-
-a.media-frame:focus-visible {
-  outline: 2px solid #FFFFFF;
-  outline-offset: 3px;
+/* Live Deployment button under each app card */
+.card-link {
+  margin-top: 0.9rem;
 }
 
 /* ==========================================================================
@@ -593,6 +566,79 @@ a.media-frame:focus-visible {
   justify-content: center;
   gap: 0.75rem;
   margin-top: clamp(1.75rem, 3.5vh, 2.75rem);
+}
+
+/* ==========================================================================
+   Intro Chapter Index & Persistent Scroll Prompt
+   ========================================================================== */
+
+.chapter-index .index-num {
+  font-size: 0.78em;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.chapter-index .project-link:hover .index-num {
+  color: #3A3A3C;
+}
+
+.scroll-cue {
+  position: fixed;
+  left: 50%;
+  bottom: clamp(1.25rem, 4vh, 2.5rem);
+  transform: translateX(-50%);
+  z-index: 900;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.95rem 1.9rem;
+  border-radius: 980px;
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  color: #000000;
+  font-family: var(--font-sans);
+  font-size: clamp(1rem, 1.1vw, 1.1rem);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  cursor: pointer;
+  box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.12), 0 12px 40px rgba(255, 255, 255, 0.25);
+  transition: opacity 0.4s var(--transition-smooth), padding 0.4s var(--transition-smooth), transform 0.3s var(--transition-smooth), box-shadow 0.3s ease;
+}
+
+.scroll-cue:hover {
+  transform: translateX(-50%) translateY(-2px);
+  box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.18), 0 16px 48px rgba(255, 255, 255, 0.35);
+}
+
+.scroll-cue:focus-visible {
+  outline: 2px solid #FFFFFF;
+  outline-offset: 4px;
+}
+
+.scroll-cue svg {
+  width: 22px;
+  height: 22px;
+  animation: cue-bounce 1.6s ease-in-out infinite;
+}
+
+/* After the intro: a round arrow button, still clearly visible */
+.scroll-cue.is-compact {
+  padding: 0.85rem;
+}
+
+.scroll-cue.is-compact .scroll-cue-label {
+  display: none;
+}
+
+.scroll-cue.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@keyframes cue-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(5px); }
 }
 
 /* ==========================================================================
@@ -799,7 +845,7 @@ a.media-frame:focus-visible {
   .section-stacked {
     height: auto;
     min-height: 100dvh;
-    padding: 4.5rem 1.5rem 2.5rem;
+    padding: 4.5rem 1.5rem 4.5rem;
     overflow: visible;
     scroll-snap-stop: normal;
   }
@@ -863,5 +909,8 @@ a.media-frame:focus-visible {
   }
   .nav-dot {
     transition: none !important;
+  }
+  .scroll-cue svg {
+    animation: none;
   }
 }
